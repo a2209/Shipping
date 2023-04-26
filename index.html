@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shipmate - Your Shipping Partner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    <h1>Shipmate</h1>
+    <p>Your Shipping Partner</p>
+  </header>
+
+  <main>
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li><a href="#">Domestic Shipping</a></li>
+        <li><a href="#">International Shipping</a></li>
+        <li><a href="#">Express Shipping</a></li>
+        <li><a href="#">Freight Shipping</a></li>
+      </ul>
+    </section>
+
+    <section id="booking-form">
+      <h2>Book a Shipping Service</h2>
+      <form>
+        <label for="package-type">Package Type:</label>
+        <select id="package-type" name="package-type">
+          <option value="box">Box</option>
+          <option value="envelope">Envelope</option>
+          <option value="pallet">Pallet</option>
+        </select>
+
+        <label for="origin">Origin:</label>
+        <input type="text" id="origin" name="origin">
+
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination">
+
+        <label for="weight">Weight:</label>
+        <input type="text" id="weight" name="weight">
+
+        <button type="submit">Get Quote</button>
+      </form>
+    </section>
+
+    <section id="booking-summary">
+      <h2>Booking Summary</h2>
+      <table>
+        <tr>
+          <th>Service</th>
+          <th>Package Type</th>
+          <th>Origin</th>
+          <th>Destination</th>
+          <th>Weight</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>Domestic Shipping</td>
+          <td>Box</td>
+          <td>New York, NY</td>
+          <td>Los Angeles, CA</td>
+          <td>5 lbs</td>
+          <td>$25.00</td>
+        </tr>
+      </table>
+      <p>Total Price: $25.00</p>
+      <a href="#" class="button">Book Now</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Shipmate. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
